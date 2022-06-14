@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: dodgerblue;
+    margin: auto;
+    /* width: 1000px; */ /* soluzione con misura fissa */
+    /* width: 80%; */  /* layout adattivo base */
+    max-width: 1000px; /* layout adattivo avanzato */
+}
+
+h1 {
+    padding: 20px;
+}
+
+/* mobile first - esempio con min-width */
+/* approccio mobile first, uso come espressione la min-width 
+e specifico i vari breakpoint con valori crescenti */
+
+/*
+@media screen and (min-width:768px) {
+    .container {
+        background-color: orange;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        background-color: purple;
+    }
+    h1 {
+        color: white;
+        text-align: center;
+    }
+}
+*/
+
+
+/* desktop first - esempio con max-width */
+/* approccio desktop first, uso come espressione la max-width 
+e specifico i vari breakpoint con valori decrescenti */
+
+/*
+@media screen and (max-width: 1024px) {
+    .container {
+        background-color: yellow;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        background-color: pink;
+    }
+}
+*/
+
+
+/* regole applicate per range di valori, da un minimo ad un massimo di pixel */
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .container {
+        background-color: brown;
+        color:white;
+        font-size: 16px;
+    }
+}

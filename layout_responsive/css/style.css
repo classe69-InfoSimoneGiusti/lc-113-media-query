@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+.my-10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* 
+
+APPROCCIO DESKTOP FIRST
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.colums {
+    display: flex;
+}
+
+.col {
+    width: calc(100% / 4);
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .colums { 
+        flex-wrap: wrap;
+    }
+    .col {
+        width: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .col {
+        width: 100%;
+    }
+}
+
+*/
+
+
+/* approccio MOBILE FIRST */
+img {
+    width: 100%;
+}
+
+.col {
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+    .colums {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .col {
+        width: calc(100% / 2);
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .col {
+        width: calc(100% / 4);
+    }
+}
+
+

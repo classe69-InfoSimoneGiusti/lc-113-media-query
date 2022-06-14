@@ -1,0 +1,188 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+hr {
+    margin: 50px 0px;
+}
+
+body {
+    padding: 20px;
+}
+
+.live-1 .box {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: blue;
+}
+
+@media screen and (min-width: 479px) {
+    .live-1 {
+        display: flex;
+    }
+    .box {
+        background-color: pink;
+    }
+
+    .live-1 .box:last-child {
+        margin-left: 0px;
+    }
+}
+
+
+
+.live-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+}
+
+.live-2 img {
+    border: solid 1px #ff0000;
+    margin:5px;
+}
+
+@media screen and (max-width:780px) {
+    .live-2 {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .live-2 {
+        flex-direction: column;
+    }
+    .live-2 img {
+        width: 100%;
+    }
+}
+
+
+.live-3 .box {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+
+@media screen and (max-width: 479px) {
+    .live-3 .box {
+        border-radius: 50%;
+    }
+}
+
+/* APPROCCIO COME DA SLIDE - IBRIDO */
+/*
+.live-4 .box {
+    height: 200px;
+    background-color: blue;
+}
+
+@media screen and (max-width: 479px) {
+    .live-4 .box {
+        background-color: lightgreen;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .live-4 .box {
+        background-color: pink;
+    }
+}
+*/
+
+/* APPROCCIO MOBILE FIRST */
+
+/*
+.live-4 .box {
+    height: 200px;
+    background-color: lightgreen;
+}
+
+@media screen and (min-width: 480px) {
+    .live-4 .box {
+        background-color: blue;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .live-4 .box {
+        background-color: pink;
+    }
+}
+*/
+
+
+/* APPROCCIO DESKTOP FIRST */
+
+.live-4 .box {
+    height: 200px;
+    background-color: pink;
+}
+
+@media screen and (max-width: 1440px) {
+    .live-4 .box {
+        background-color: blue;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .live-4 .box {
+        background-color: lightgreen;
+    }
+}
+
+
+@media screen and (min-width:780px) {
+    .live-5 ul {
+        display: flex;
+        list-style: none;
+    }
+
+    .live-5 li {
+        padding: 5px 20px;
+        background-color: grey;
+        margin: 0px 5px;
+        color: white;
+    }
+}
+
+
+.live-6 .box {
+    height: 200px;
+    background-color: blue;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*
+.live-6 .box:after {
+    clear: both;
+    display: table;
+    content: '';
+}
+*/
+
+.live-6 .inner {
+    background-color: lightgreen;
+    height: 200px;
+    width: 70%;
+    /*float: right;*/
+    display: flex;
+    padding:10px;
+}
+
+.live-6 .child {
+    background-color: white;
+    margin: 10px;
+    width: 40%;
+}
+
+@media screen and (max-width: 579px) {
+    .live-6 .inner {
+        display: none;
+    }
+}
